@@ -12,6 +12,7 @@ import FileUploadPage from "./pages/fileupload";
 import ChatMessageBox from './ChatMessageBox/ChatMessageBox';
 import Dashboard from './pages/dashboard';
 //import ChatMessageBox from './ChatMessageBox/ChatMessageBox'
+import ChatRoom from './ChatRoom/chatroom.js';
 
 class App extends Component {
 
@@ -22,7 +23,7 @@ class App extends Component {
                     <Switch>
                         <Route exact path='/' component={Login} />
                         <Route exact path='/dashboard' component={Dashboard} />
-                        <Route path='/index' component={Dashboard}/>
+                        <Route path='/chatroom' component={ChatRoom}/>
                         <Route path='/register' component={Register} />
                         <Route path='/add' component={Dashboard} />
                         <Route path='/edit/' component={Dashboard} />
